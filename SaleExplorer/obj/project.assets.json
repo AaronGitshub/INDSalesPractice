@@ -15,6 +15,27 @@
           "lib/netstandard2.0/CsvHelper.dll": {}
         }
       },
+      "GeoJSON.Net/1.1.72": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/GeoJSON.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/GeoJSON.Net.dll": {}
+        }
+      },
+      "GoogleMaps.LocationServices/1.2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/GoogleMaps.LocationServices.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/GoogleMaps.LocationServices.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4359,6 +4380,36 @@
         "lib/net45/CsvHelper.xml",
         "lib/netstandard2.0/CsvHelper.dll",
         "lib/netstandard2.0/CsvHelper.xml"
+      ]
+    },
+    "GeoJSON.Net/1.1.72": {
+      "sha512": "OjxJF/1E9Z6t81ioJLl+bXWXWKvc5TnObRbG/poPcyzCR4b6hFBdtcw+1gxLySASOAbqIpqIhRi9YUa7GAWWBg==",
+      "type": "package",
+      "path": "geojson.net/1.1.72",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "geojson.net.1.1.72.nupkg.sha512",
+        "geojson.net.nuspec",
+        "lib/net35/GeoJSON.Net.dll",
+        "lib/net40/GeoJSON.Net.dll",
+        "lib/net45/GeoJSON.Net.dll",
+        "lib/netstandard1.0/GeoJSON.Net.dll",
+        "lib/netstandard1.1/GeoJSON.Net.dll"
+      ]
+    },
+    "GoogleMaps.LocationServices/1.2.0.2": {
+      "sha512": "2G37svPRFSFJCF3Q+tn7cvv0OcuDkJ+mAF10tit4XJL1ToCFa/BzL0c5jCS28RtMhG92qOOS8fymLFofUENyoA==",
+      "type": "package",
+      "path": "googlemaps.locationservices/1.2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "googlemaps.locationservices.1.2.0.2.nupkg.sha512",
+        "googlemaps.locationservices.nuspec",
+        "lib/netcoreapp2.1/GoogleMaps.LocationServices.dll"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -11825,6 +11876,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "CsvHelper >= 12.1.2",
+      "GeoJSON.Net >= 1.1.72",
+      "GoogleMaps.LocationServices >= 1.2.0.2",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0"
@@ -11874,6 +11927,14 @@
           "CsvHelper": {
             "target": "Package",
             "version": "[12.1.2, )"
+          },
+          "GeoJSON.Net": {
+            "target": "Package",
+            "version": "[1.1.72, )"
+          },
+          "GoogleMaps.LocationServices": {
+            "target": "Package",
+            "version": "[1.2.0.2, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",

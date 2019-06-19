@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "288f97c2546e1de6cf33fc7b0071267edf631726"
+    "signature": "8c3a00107d958f304c24cb468f624e4ef0b8b880"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,8 @@
       "SaleExplorer/1.0.0": {
         "dependencies": {
           "CsvHelper": "12.1.2",
+          "GeoJSON.Net": "1.1.72",
+          "GoogleMaps.LocationServices": "1.2.0.2",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0"
@@ -49,6 +51,31 @@
         },
         "compile": {
           "lib/netstandard2.0/CsvHelper.dll": {}
+        }
+      },
+      "GeoJSON.Net/1.1.72": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.1/GeoJSON.Net.dll": {
+            "assemblyVersion": "1.1.72.0",
+            "fileVersion": "1.1.72.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/GeoJSON.Net.dll": {}
+        }
+      },
+      "GoogleMaps.LocationServices/1.2.0.2": {
+        "runtime": {
+          "lib/netcoreapp2.1/GoogleMaps.LocationServices.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/GoogleMaps.LocationServices.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3171,6 +3198,20 @@
       "sha512": "sha512-SpMsKw74xuAMsYZ+tSQsHF9UYlZm6E+LBSwDPukGCy1dYLVJwM6ZR7gFhKWDMh7OR/1ba8t4UV/RraMJKx+mog==",
       "path": "csvhelper/12.1.2",
       "hashPath": "csvhelper.12.1.2.nupkg.sha512"
+    },
+    "GeoJSON.Net/1.1.72": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OjxJF/1E9Z6t81ioJLl+bXWXWKvc5TnObRbG/poPcyzCR4b6hFBdtcw+1gxLySASOAbqIpqIhRi9YUa7GAWWBg==",
+      "path": "geojson.net/1.1.72",
+      "hashPath": "geojson.net.1.1.72.nupkg.sha512"
+    },
+    "GoogleMaps.LocationServices/1.2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2G37svPRFSFJCF3Q+tn7cvv0OcuDkJ+mAF10tit4XJL1ToCFa/BzL0c5jCS28RtMhG92qOOS8fymLFofUENyoA==",
+      "path": "googlemaps.locationservices/1.2.0.2",
+      "hashPath": "googlemaps.locationservices.1.2.0.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",

@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="12.1.2" />
+    <PackageReference Include="GeoJSON.Net" Version="1.1.72" />
+    <PackageReference Include="GoogleMaps.LocationServices" Version="1.2.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
