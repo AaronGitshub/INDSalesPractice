@@ -49,7 +49,7 @@ using SaleExplorer;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(53, 816, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "906395fb30884c98842744855fbacb91", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "686ca3a3d6e24d8f9e7d0e2cd6743e55", async() => {
                 BeginContext(59, 803, true);
                 WriteLiteral(@"
     <meta charset='utf-8' />
@@ -92,7 +92,7 @@ using SaleExplorer;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(871, 5192, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70194f9a7ba441468755053747c90a57", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be01f52e53fe4ba8a6c33072418d55bc", async() => {
                 BeginContext(877, 869, true);
                 WriteLiteral(@"
     <div id=""selections""></div>
