@@ -20,6 +20,7 @@ namespace SaleExplorer.Pages
         public string MapboxAccessToken { get; }
 
         public IndexModel(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
+
         {
             _hostingEnvironment = hostingEnvironment;
 
@@ -32,7 +33,7 @@ namespace SaleExplorer.Pages
             {
                 BadDataFound = context => {}
             };
-
+            
             using (var sr = new StreamReader(Path.Combine(_hostingEnvironment.WebRootPath, "2018MarionCountyIND_xlsWLatLong.dat")))
             using (var reader = new CsvReader(sr, configuration))
             {

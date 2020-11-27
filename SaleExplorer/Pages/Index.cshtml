@@ -42,6 +42,8 @@
             <div id="sale-street" class="font-bold text-l">Sale Address goes here</div>
             <div id="sale-price" class="font-bold text-l">Price goes here</div>
             <div id="sale-buyer1" class="font-bold text-l">Buyer 1 goes here</div>
+            <div id="sale-seller1" class="font-bold text-l">Seller 1 goes here</div>
+            <div id="sale-saleDate" class="font-bold text-l">Sale Date goes here</div>
         </div>
     </div>
 
@@ -143,12 +145,16 @@ map.addControl(nav, 'bottom-right');
                     var salesPrice = e.features[0].properties.salesPrice;
                     var saleCity = e.features[0].properties.saleCity;
                     var buyer1 = e.features[0].properties.buyer1;
+                    var seller1 = e.features[0].properties.seller1;
+                    var saleDate = e.features[0].properties.saleDate;
                     var lat = e.features[0].geometry.coordinates[1];
                     var longitude = e.features[0].geometry.coordinates[0];
                     //Display Sale info
                     document.querySelector('#sale-street').innerText = saleStreet + ", " + saleCity + ", IN";
                     document.querySelector('#sale-price').innerText = "Sale Price: " + salesPrice;
                     document.querySelector('#sale-buyer1').innerText = "Buyer 1: " + buyer1;
+                    document.querySelector('#sale-seller1').innerText = "Seller 1: " + seller1;
+                    document.querySelector('#sale-saleDate').innerText = "Sale Date: " + saleDate;
                     //Ensure the info box is visible
                     document.querySelector('#info-card').style.display = '';
                 });
